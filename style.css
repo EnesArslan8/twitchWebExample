@@ -115,10 +115,14 @@ table {
     background-color: #3b3b44 ;
     padding-left:10px ;
     color: white;
-    width: 100%;
+    box-sizing: border-box;
+    width: 330px;
 }
 .header .header-search input::placeholder{
     color: #848494;
+}
+.header .header-search input:hover{
+    border: 2px solid #9794ff;
 }
 .header .header-search div{
     width: 30px;
@@ -129,6 +133,7 @@ table {
 }
 .header .header-search div:hover{
     cursor: not-allowed;
+    background-color:#444;
 }
 .header .header-search div i{
     color: white;
@@ -137,8 +142,45 @@ table {
     align-items: center;
     justify-content: center;
 }
-.header .header-rigth img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+.header .header-right{
+    display: flex;
+}
+.header .header-right div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.header .header-right div a img{
+    filter: invert(1);
+    width: 15px;
+    height: 15px;
+}
+.header .header-right div a:hover{
+    background-color: #3b3b44;
+}
+.header .header-right button{
+    background-color: #3a3a3d;
+    margin-right: 20px;
+    padding: 7px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+}
+.header .header-right button:hover{
+    background-color: #444;
+}
+.header .header-right button img{
+    filter: invert(1);
+    margin-right: 5px;
+}
+.header .header-right img.profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
